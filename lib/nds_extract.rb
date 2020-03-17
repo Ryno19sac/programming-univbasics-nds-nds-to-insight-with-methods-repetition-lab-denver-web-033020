@@ -41,7 +41,7 @@ def total_gross(nds)
    
   director_index = 0
   totals = 0
-   binding.pry
+   
   while director_index < nds[:movies].length do
    totals += nds[:movies][director_index][:worldwide_gross]
     director_index += 1 
