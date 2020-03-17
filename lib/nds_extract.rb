@@ -46,7 +46,7 @@ def total_gross(nds)
    
   while director_index < director_names.length do
    director_name = director_names[director_index]
-   binding.pry
+   
    totals += director_earnings[director_name]
     director_index += 1 
     
