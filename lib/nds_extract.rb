@@ -38,12 +38,16 @@ index
 end
 
 def total_gross(nds) 
-   
+  director_earnings = directors_totals(nds) 
+  director_names = list_of_directors(nds)
+  
   director_index = 0
   totals = 0
+   
+  while director_index < director_names.length do
+   director_name = director_names[director_index]
    binding.pry
-  while director_index < nds[:movies].length do
-   totals += nds[:movies][director_index][:worldwide_gross]
+   totals += director_earnings[director_name]
     director_index += 1 
     
   end
